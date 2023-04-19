@@ -1,0 +1,29 @@
+.footer {
+    background-color: $first;
+    margin-bottom: 24px;
+    color: $light;
+    padding: 12px;
+    border-radius: 12px;
+}
+@media (min-width: 576px) {
+    .footer {
+        text-align: center;
+    }
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+}
+.footer [class*="icon-"]::before {
+    position: relative;
+    top: 4px;
+    right: 6px;
+}
+.footer [class*="icon-"] {
+    color: $light;
+    text-decoration: none;
+}
+.footer__copy {
+    text-align: center;
+}

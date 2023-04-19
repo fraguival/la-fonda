@@ -1,0 +1,59 @@
+.contact {
+    background-color: $second;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 12px;
+}
+.main__title {
+    color: $light;
+    font-size: 32px;
+    margin-bottom: 12px;
+    padding: 12px;
+    text-align: center;
+}
+.contact__information {
+    color: $light;
+    margin-bottom: 36px;
+    border-bottom: 2px solid $third;
+}
+.contact__information:nth-child(2) {
+    line-height: 1.6;
+}
+.social {
+    
+    margin: 24px 0;
+}
+.form {
+    padding: 12px;
+}
+.form__tag {
+    display: block;
+    color: $light;
+    margin-bottom: 12px;
+}
+.form__gate {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+.form__textarea {
+    height: 180px;
+    resize: none;
+}
+.btn--form {
+    background-color: $first;
+}
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .contact__information {
+        margin-right: -24px;
+        border-bottom: none;
+        border-right: 2px solid $third;
+    }
+}

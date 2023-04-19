@@ -1,0 +1,46 @@
+.header {
+    margin-bottom: 12px;
+}
+.header__logo {
+    color: $second;
+    font-size: 36px;
+    padding: 12px;
+}
+.info__phone {
+    background-color: $second;
+    color: $light;
+    padding: 12px;
+    border-radius: 8px;
+}
+.info__address {
+    margin: 0;
+    padding: 12px;
+}
+.header [class*="icon-"]::before {
+    position: relative;
+    top: 2px;
+    right: 6px;
+}
+@media (min-width: 480px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+    .header__logo {
+        color: $light;
+        padding: 0;
+    }
+    .header__info {
+        text-align: right;
+    }
+    .info__phone {
+        background: none;
+        padding: 12px;
+    }
+    .info__address {
+        color: $light;
+        padding: 0;
+    }
+}

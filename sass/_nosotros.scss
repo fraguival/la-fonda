@@ -1,0 +1,35 @@
+.team {
+    background-color: $dark;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 12px;
+}
+.team__title {
+    color: $light;
+    font-size: 32px;
+    padding: 12px;
+    text-align: center;
+}
+.three__title {
+    color: $third;
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.three__text {
+    color: $light;
+    padding: 12px;
+    text-align: center;
+} 
+.three__text {
+    line-height: 1.6;
+}
+@media (min-width: 576px) {
+    .group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+}
+
+

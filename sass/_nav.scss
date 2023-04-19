@@ -1,0 +1,76 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+}
+.menu {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $first;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: height .5s linear;
+}
+@media (min-width: 768px) {
+    .menu {
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: 100%;
+        height: auto;
+    }
+    .fire {
+        display: none;
+    }
+}
+.menu__link {
+    color: $light;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+.menu__link--active,
+.menu__link:hover {
+    background-color: $second;
+    border-radius: 8px;
+}
+.fire {
+    color: $third;
+    font-size: 28px;
+    margin-left: 12px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.show {
+    height: 148px;
+}
+.social {
+    display: flex;
+    gap: 12px;
+}
+.social__link {
+    text-decoration: none;
+}
+.social [class*="icon-"] {
+    background-color: $third;
+    color: #4e6c81;
+    font-size: 24px;
+    padding: 8px 6px 0 8px;
+    border-radius: 50%;
+}
